@@ -79,7 +79,43 @@ body {
   }
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
+  .col-sm-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .cv-img {
+    width: 100px !important;
+    height: 100px;
+    border-width: 1px !important;
+    object-fit: cover;
+  }
+  .list-unstyled li {
+    display: contents;
+  }
+  .list-unstyled li:last-child:after {
+    content: ".";
+  }
+  .list-unstyled li:not(:last-child):after {
+    content: ",";
+  }
+  .p-3 {
+    padding: 0.5rem !important;
+  }
+  .py-3 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .navbar-toggler-icon {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  .py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .hero {
+    margin-top: 45px !important;
+  }
   .hero .d-flex {
     column-gap: 0;
     flex-wrap: wrap;
@@ -88,6 +124,7 @@ body {
   .image-style {
     margin: auto;
     margin-bottom: 20px;
+    max-width: 100px !important;
   }
 }
 .image-style {
@@ -108,7 +145,7 @@ body {
     width: calc(50% - 10px) !important;
   }
 }
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
   #skills .card {
     width: 100% !important;
   }
@@ -118,7 +155,7 @@ body {
   height: 300px;
   object-fit: cover;
 }
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
   #portfolio .card-wrapper {
     width: 100% !important;
   }
@@ -216,7 +253,7 @@ footer .social-icons a {
     margin-bottom: 2rem;
   }
 }
-.card-wrapper-row{
+.card-wrapper-row {
   row-gap: 24px;
 }
 .card-wrapper-row .card-wrapper {
@@ -329,31 +366,6 @@ footer .social-icons a {
   }
   .timeline-section .timeline-item .timeline-content {
     margin-left: 3rem;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .timeline-section {
-    background-color: #121212;
-    color: #ddd;
-  }
-  .timeline-section .timeline-title {
-    color: #fff;
-  }
-  .timeline-section .timeline::before {
-    background-color: #5e3aef;
-  }
-  .timeline-section .timeline-icon {
-    background-color: #5e3aef;
-  }
-  .timeline-section .timeline-content {
-    background: #1e1e1e;
-    color: #ccc;
-  }
-  .timeline-section .timeline-content h3, .timeline-section .timeline-content h4 {
-    color: #fff;
-  }
-  .timeline-section .timeline-content .timeline-date {
-    color: #888;
   }
 }
 
